@@ -53,6 +53,6 @@ jobs:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_KEY }}
-        source: libs/*
-        target: "/home/ec2-user/app"
+        source: build/libs/*.jar
+        target: /home/ec2-user/app
 
